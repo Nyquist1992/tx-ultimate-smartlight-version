@@ -15,7 +15,14 @@ ESPHome 韌體配置：Sonoff TX Ultimate 觸控面板 + 智慧燈效
 
 ### What is this
 
-ESPHome firmware for Sonoff TX Ultimate touch panel with configurable smart lighting effects. Supports 2/3 relay touch zones, runtime LED direction flip, nightlight mode, and per-button LED color control.
+The Sonoff TX Ultimate is the best 118/120-type smart home switch I have used, but it requires a neutral wire and firmware flashing. This firmware supports configurable smart lighting effects. Includes 2/3 relay touch zone mapping, runtime LED direction flip, nightlight mode, and per-button LED color control.
+
+This project aims to improve the stock firmware by enhancing lighting effects, relay mechanisms, and exposing more entities for user-defined automations. Use cases include:
+
+1. Indicator lights mimicking traditional switches, with reversible orientation (no more opening doors to check if lights are off).
+2. Two-way switch functionality via HA automations — no extra wiring needed.
+3. Swipe, multi-touch, and long-press gestures to control curtains (open/close/stop) and trigger specific scenes.
+4. Customizable multi-press automations for extended functionality.
 
 **Architecture:**
 ```
@@ -171,7 +178,14 @@ MIT License — Based on [SmartHome-yourself/sonoff-tx-ultimate-for-esphome](htt
 
 ### 這是什麼
 
-適用於 Sonoff TX Ultimate 觸控面板的 ESPHome 韌體配置，支援可配置的智慧燈效。包含 2/3 路繼電器觸控區域映射、runtime LED 方向翻轉、夜燈模式、按鍵 LED 顏色獨立控制。
+Sonoff TX Ultimate為目前使用過最良好118/120型的智慧家居開關，但需要零火線及韌體刷寫。此韌體支援可配置的智慧燈效。包含 2/3 路繼電器觸控區域映射、runtime LED 方向翻轉、夜燈模式、按鍵 LED 顏色獨立控制。
+
+本專案為拋磚引玉性質，修改燈光效果，relay機制，暴露更多實體讓user開發各式自動化，應用實例如下:
+
+1.仿傳統開關指示，並可依需求換向(你不會想要開門確認燈是否沒關)。
+2.利用同步自動化可達成雙切開關效果，不須額外配線。
+3.滑動、多點觸控、長按，分別控制窗簾開閉、停止及特定場景觸發。
+4.可修改成連按等自動化觸發擴展功能。
 
 **架構：**
 ```
